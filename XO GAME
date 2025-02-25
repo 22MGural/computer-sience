@@ -1,0 +1,128 @@
+first_row=list(' '*3)
+second_row=list(' '*3)
+third_row=list(' '*3)
+print(first_row)
+print(second_row)
+print(third_row)
+xrow=list('x'*3)
+orow=list('o'*3)
+while True:
+    xcordinate=input('Enter the co-ordinate(Player X)(For example: first row first column=11:')
+    print(xcordinate)
+    xcordinate=list(xcordinate)
+    if xcordinate[0]=='1':
+        seccord=xcordinate[1]
+        realseccord=int(seccord)-1
+        first_row[realseccord]='x'
+        print('this is the realseccord:',realseccord)
+        print(first_row)
+        print(second_row)
+        print(third_row)
+        cross1x=list(first_row[0]+second_row[1]+third_row[2])
+        cross2x=list(first_row[2]+second_row[1]+third_row[0])
+        if cross1x==xrow:
+            print('Player X won')
+            break
+        elif cross2x==xrow:
+            print('Player X won')
+            break
+        elif first_row==xrow:
+            print('Player X won')
+            break
+    elif xcordinate[0]=='2':
+        seccord=xcordinate[1]
+        realseccord=int(seccord)-1
+        second_row[realseccord]='x'
+        print('this is the realseccord:',realseccord)
+        print(first_row)
+        print(second_row)
+        print(third_row)
+        cross1x=list(first_row[0]+second_row[1]+third_row[2])
+        cross2x=list(first_row[2]+second_row[1]+third_row[0])
+        if cross1x==xrow:
+            print('Player X won')
+            break
+        elif cross2x==xrow:
+            print('Player X won')
+            break
+        elif first_row==xrow:
+            print('Player X won')
+            break
+    elif xcordinate[0]=='3':
+        seccord=xcordinate[1]
+        realseccord=int(seccord)-1
+        third_row[realseccord]='x'
+        print('this is the realseccord:',realseccord)
+        print(first_row)
+        print(second_row)
+        print(third_row)
+        cross1x=list(first_row[0]+second_row[1]+third_row[2])
+        cross2x=list(first_row[2]+second_row[1]+third_row[0])
+        if cross1x==xrow:
+            print('Player X won')
+            break
+        elif cross2x==xrow:
+            print('Player X won')
+            break
+        elif first_row==xrow:
+            print('Player X won')
+            break
+    ocordinate=input('Enter the co-ordinate(Player O)(example:first row second column=12:')
+    print(ocordinate)
+    if ocordinate[0]=='1':
+        seccord=ocordinate[1]
+        realseccord=int(seccord)-1
+        first_row[realseccord]='o'
+        print('this is the realseccord:',realseccord)
+        print(first_row)
+        print(second_row)
+        print(third_row)
+        cross1o=list(first_row[0]+second_row[1]+third_row[2])
+        cross2o=list(first_row[2]+second_row[1]+third_row[0])
+        if cross1o==orow:
+            print('Player O won')
+            break
+        elif cross2o==orow:
+            print('Player O won')
+            break
+        elif first_row==orow:
+            print('Player O won')
+            break
+    elif ocordinate[0]=='2':
+        seccord=ocordinate[1]
+        realseccord=int(seccord)-1
+        second_row[realseccord]='o'
+        print('this is the realseccord:',realseccord)
+        print(first_row)
+        print(second_row)
+        print(third_row)
+        cross1o=list(first_row[0]+second_row[1]+third_row[2])
+        cross2o=list(first_row[2]+second_row[1]+third_row[0])
+        if cross1o==orow:
+            print('Player O won')
+            break
+        elif cross2o==orow:
+            print('Player O won')
+            break
+        elif first_row==orow:
+            print('Player O won')
+            break
+    elif ocordinate[0]=='3':
+        seccord=ocordinate[1]
+        realseccord=int(seccord)-1
+        third_row[realseccord]='o'
+        print('this is the realseccord:',realseccord)
+        print(first_row)
+        print(second_row)
+        print(third_row)
+        cross1o=list(first_row[0]+second_row[1]+third_row[2])
+        cross2o=list(first_row[2]+second_row[1]+third_row[0])
+        if cross1o==orow:
+            print('Player O won')
+            break
+        elif cross2o==orow:
+            print('Player O won')
+            break
+        elif first_row==orow:
+            print('Player O won')
+            break
